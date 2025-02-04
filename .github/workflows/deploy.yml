@@ -1,0 +1,31 @@
+name: Deploy Site
+
+on:
+  push:
+    branches:
+      - main  # Change this to your default branch if different
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Blogdown Source
+        uses: actions/checkout@v4
+
+      - name: Install Hugo
+        run: |
+          sudo apt-get install hugo -y
+          hugo --minify
+
+      - name: Deploy to Site Repository
+        run: |
+          git clone https://x-access-token:${{ secrets.DEPLOY_PAT }}@github.com/site-cpyang/site-cpyang.github.io.git site
+          rm -rf site/*
+          cp -r public/* site/
+          cd site
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add .
+          git commit -m "Deploy site from Blogdown"
+          git push origin main
