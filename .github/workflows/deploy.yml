@@ -12,8 +12,6 @@ jobs:
     steps:
       - name: Checkout Blogdown Source (Including Submodules)
         uses: actions/checkout@v4
-        with:
-          submodules: true  # Ensure public/ submodule is fetched
 
       - name: Install Hugo 0.120.0
         run: |
