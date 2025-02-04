@@ -65,16 +65,26 @@ sections:
   content:
     date_format: Aug 2021
     items:
+    - company: Interpretable Machine Learning Lab, Duke University
+      company_logo: Duke-Blue-Devils-logo
+      company_url: ""
+      date_end: ""
+      date_start: "2024-08-01"
+      description: |2-
+        - Researched and developed a custom implementation of DiffPool for Heterogeneous GNN used in musical analysis in PyTorch, improving Cross-Entropy Loss by more than 60% in validation with additional hyperparameter tuning.
+        - Co-advised by PhD candidate Stephen Ni-Hahn and Prof. Cynthia Rudin.      
+      location: Durham, NC
+      title: Graduate Research Assistant
     - company: Curinos
       company_logo: curinos-favicon-2
       company_url: ""
-      date_end: ""
+      date_end: "2024-06-01"
       date_start: "2023-09-10"
       description: |2-
           * Researched and developed industry-level nonlinear Asset-Liability Management (ALM) models to predict acquisition and other portfolio balances for smaller banks and credit unions, resulting in improved acquisition prediction vs. legacy models in terms of out-of-sample validation.
           * Created automated ad-hoc regression notebooks with PySpark for creating, testing, and validating models with different configurations, reducing the time to build proof-of-concept models by half.
-      location: Chicago
-      title: Modeling Analyst II
+      location: Chicago, IL
+      title: Senior Data Science Analyst
     - company: Curinos
       company_logo: curinos-favicon-2
       company_url: ""
@@ -84,7 +94,7 @@ sections:
           * Led ML engineering team to migrate legacy modeling pipeline from using Cloudera to Databricks, coordinating with DevSecOps and Application teams to schedule testing, promotion, and release plans, leading to more than $100k in annual savings for data platform expenses and a 30% decrease in pipeline processing time on average. (Publicly acknowledged in company-wide town hall meeting)
           * Tuned nonlinear hierarchical price elasticity models en masse for multiple major US banks, each with 10,000+ model segments, resulting in improved fit in terms of both AIC and R2 with a significantly higher rate of convergence.
           *  Installed and managed more than 10,000 price elasticity models per client bank to predict and optimize their deposit portfolio across a wide range of interest rates, with precise Model Risk Management documentation.
-      location: Chicago
+      location: Chicago, IL
       title: Data Science Analyst II
     - company: Curinos
       company_logo: curinos-favicon-2
@@ -95,7 +105,7 @@ sections:
           * Converted local, single-threaded, legacy modeling pipeline to use SparkR and Cloudera, reducing run time for model fitting by up to 30 times.
           * Performed Exploratory Data Analysis (EDA) for client banks to tune and reconfigure their models and data segments, leading to better-performing price elasticity models in terms of MAPE, R2, and rate of convergence.
           * Set up and automated custom SQL procedures to clean, wrangle, map, and transform client’s data feed to be used in the modeling pipeline, partially eliminating the need for manual model data refreshes.
-      location: Chicago
+      location: Chicago, IL
       title: Data Science Analyst
     - company: University of Michigan - Ann Arbor
       company_logo: block-m
@@ -107,7 +117,7 @@ sections:
         * Developed new music classification methods using Musical Instrument Digital Interface (MIDI) and LSTM neural networks resulting in 82% accuracy in music classification, more than 10% improvement over conventional ML methods.
         * Improved models using supervised machine learning methods like Support Vector Machines, Decision Trees, Ensemble Methods, K-nearest neighbors etc.
         * Recieved ”Highest Honor” distinction in Data Science from UMich, one of only 2 awarded in 2021.
-      location: Ann Arbor
+      location: Ann Arbor, MI
       title: Honors Student Researcher
     title: Experience
   design:

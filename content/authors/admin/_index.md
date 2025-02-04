@@ -1,25 +1,30 @@
 ---
+
 bio: My research interests include all things Data Science and modeling related tasks. 
 education:
-  courses:
+courses:
+  - course: Masters in Interdisciplinary Data Science
+    institution: Duke University - Durham, NC
+    year: 2024 - 2026
   - course: Bachelors in Honors Data Science and Mathematical Sciences
     institution: University of Michigan - Ann Arbor
     year: 2018 - 2021
   - course: International Baccalaureate
     institution: American International School of Budapest
     year: 2018
-email: ""
-first_name: Chao Péter
+email: "chaopeter.yang@gmail.com"
+first_name: Peter
 highlight_name: true
 interests:
-- Artificial Intelligence
-- Deep Neural Networks
-- Data Science
+- Graphical Neural Networks
+- Gen AI
+- Music Generation
+- Financial Modeling
 last_name: Yang
 organizations:
-- name: Curinos, Inc.
-  url: https://www.curinos.com
-role: Data Science Analyst II
+- name: Interpretable Machine Learning Lab, Duke University
+  url: https://users.cs.duke.edu/~cynthia/lab.html
+role: Graduate Research Assistant
 social:
 - icon: envelope
   icon_pack: fas
@@ -34,12 +39,14 @@ social:
   link: https://www.linkedin.com/in/chao-peter-yang/
 - icon: cv
   icon_pack: ai
-  link: uploads/CV-2.pdf
+  link: uploads/CV_20250203.pdf
 status:
   icon: ☕️
 superuser: true
-title: Chao Péter Yang
+title: Peter Yang
 ---
 
-Having received highest honors in Data Science from the University of Michigan, Chao Peter Yang is current working as a Data Science Analyst at Curinos, Inc.. He has an interest in all things Data Science and Machine Learning related, with an especially keen interest in neural networks and modeling in general. 
+A distinguished honoree in Data Science from the University of Michigan, Peter Yang is now a Research Assistant at Duke University's Interpretable Machine Learning Lab, working under PhD candidate Stephen Ni-Hahn and Professor Cynthia Rudin. He is also pursuing an MS in Interdisciplinary Data Science at Duke, with a focus on graphical neural networks and generative AI.
+
+Previously, Peter spent three years as a Senior Data Science Analyst at Curinos, Inc., where he developed innovative financial and pricing models for major retail banks.
 {style="text-align: justify;"}
