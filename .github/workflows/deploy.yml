@@ -13,10 +13,11 @@ jobs:
       - name: Checkout Blogdown Source
         uses: actions/checkout@v4
 
-      - name: Install Hugo
+      - name: Install Hugo 0.120.0
         run: |
-          sudo apt-get install hugo -y
-          hugo --minify
+          wget https://github.com/gohugoio/hugo/releases/download/v0.120.0/hugo_extended_0.120.0_linux-amd64.deb
+          sudo dpkg -i hugo_extended_0.120.0_linux-amd64.deb
+          hugo version  # Verify installation
 
       - name: Deploy to Site Repository
         run: |
