@@ -10,23 +10,31 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Blogdown Source
+      - name: Checkout Blogdown Source (Including Submodules)
         uses: actions/checkout@v4
+        with:
+          submodules: true  # Ensure public/ submodule is fetched
 
       - name: Install Hugo 0.120.0
         run: |
           wget https://github.com/gohugoio/hugo/releases/download/v0.120.0/hugo_extended_0.120.0_linux-amd64.deb
           sudo dpkg -i hugo_extended_0.120.0_linux-amd64.deb
-          hugo version  # Verify installation
+          hugo version
 
-      - name: Deploy to Site Repository
+      - name: Build Site
         run: |
-          git clone https://x-access-token:${{ secrets.DEPLOY_PAT }}@github.com/site-cpyang/site-cpyang.github.io.git site
-          rm -rf site/*
-          cp -r public/* site/
-          cd site
+          hugo --minify
+          if [ ! -d "public" ]; then
+            echo "Error: Hugo did not generate the public/ directory!"
+            exit 1
+          fi
+          ls -l public  # Debugging output
+
+      - name: Commit and Push Changes to Submodule
+        run: |
+          cd public
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add .
-          git commit -m "Deploy site from Blogdown"
+          git commit -m "Update generated site from Blogdown" || echo "No changes to commit"
           git push origin main
